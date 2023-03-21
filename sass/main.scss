@@ -12,4 +12,30 @@ body{
     align-items: center;
     min-height: 100vh;
     max-width: 1400px;
+    margin: 0 auto;
+}
+.card-box{
+    max-width:80%;
+    height:100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.one{
+    background-image: url('../img/laptop-gd1c2f151e_1920.jpg');
+}
+.two{
+    background-image: url('../img/beanie-g88fa53172_1920.jpg');
 }
