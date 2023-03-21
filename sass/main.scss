@@ -85,3 +85,27 @@ h2 {
 h1 {
 	color: rgb(184, 160, 23);
 }
+.quest{
+    position: relative;
+    cursor: pointer;
+
+    width: 300px;
+    
+    background-image: url('../img/people-1690965_1280.jpg');
+}
+.shadow{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(50% 100%, 0% 100%, 100% 100%);
+    transition: 1s;
+
+}
+
+.quest:hover>.shadow{
+    clip-path: polygon(50% -100%, 0% 100%, 100% 100%);
+
+}
