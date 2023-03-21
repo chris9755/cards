@@ -10,37 +10,82 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.card-box {
-  max-width: 80%;
-  height: 100%;
+.box-card {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  width: 300px;
+  height: 600px;
+  border: solid 1px;
   background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-clip-path: circle(0% at 50% 90%);
+          clip-path: circle(0% at 50% 90%);
+  transition: 0.7s;
+}
+
+button:hover + .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 28px;
+  background: none;
+  color: white;
+  cursor: crosshair;
+  padding: 10px;
+  z-index: 100;
 }
 
 .one {
-  background-image: url("../img/laptop-gd1c2f151e_1920.jpg");
+  background-image: url("../img/people-1690965_1280.jpg");
 }
 
 .two {
-  background-image: url("../img/beanie-g88fa53172_1920.jpg");
+  background-image: url("../img/portrait-657116_1280.jpg");
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: rgb(184, 160, 23);
 }/*# sourceMappingURL=main.css.map */
